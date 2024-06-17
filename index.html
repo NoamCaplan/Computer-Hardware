@@ -3,62 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Components Overview</title>
+    <title>TechCorp - Computer Components Overview</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>TechCorp</h1>
+            <h1>NoamsTechCorp</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#" id="nav-home">Home</a></li>
+                    <li><a href="#" id="nav-about">About</a></li>
+                    <li><a href="#" id="nav-components">Components</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="container">
-        <h2>Basic Components of a Computer</h2>
-        <table id="components-table">
-            <thead>
-                <tr>
-                    <th>Component</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>CPU (Central Processing Unit)</td>
-                    <td>The Central Processing Unit (CPU) is often referred to as the brain of the computer. It performs the majority of the processing inside the computer, executing instructions from programs and applications.</td>
-                </tr>
-                <tr>
-                    <td>Memory (RAM)</td>
-                    <td>Random Access Memory (RAM) is the short-term memory of a computer. It temporarily stores data that the CPU needs to access quickly, such as running applications and active processes.</td>
-                </tr>
-                <tr>
-                    <td>Storage (HDD/SSD)</td>
-                    <td>Storage devices, like Hard Disk Drives (HDD) and Solid State Drives (SSD), are used to store data permanently. This includes the operating system, software applications, and personal files.</td>
-                </tr>
-                <tr>
-                    <td>GPU (Graphics Processing Unit)</td>
-                    <td>The Graphics Processing Unit (GPU) is responsible for rendering images, videos, and animations. It's especially important for gaming, video editing, and other graphics-intensive tasks.</td>
-                </tr>
-                <tr>
-                    <td>Motherboard</td>
-                    <td>The motherboard is the main circuit board that connects all the components of a computer. It allows the CPU, RAM, storage, and other hardware to communicate with each other.</td>
-                </tr>
-                <tr>
-                    <td>Power Supply Unit (PSU)</td>
-                    <td>The Power Supply Unit (PSU) converts electrical power from an outlet into usable power for the other components of the computer. It ensures that each part receives the correct voltage and current.</td>
-                </tr>
-            </tbody>
-        </table>
+    <main class="container" id="content">
+        <section id="home" class="page">
+            <h2>Welcome to Noams TechCorp</h2>
+            <p>Learn about  the essential components that make up a modern computer. Learn about the functions and importance of each component, and understand how they work together to power your digital world. In a world in wich technology is all over its important to learn and understand what makes up the systems we use.</p>
+        </section>
+        <section id="about" class="page">
+            <h2>About Us</h2>
+            <p>NoamsTechCorp is dedicated to providing detailed and accurate information about computer components. Our mission is to educate and inform users about the vital parts of a computer and their roles in ensuring optimal performance.</p>
+        </section>
+        <section id="components" class="page">
+            <h2>Basic Components of a Computer</h2>
+            <table id="components-table">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="component-name">CPU (Central Processing Unit)</td>
+                        <td>The Central Processing Unit (CPU) is often referred to as the brain of the computer. It performs the majority of the processing inside the computer, executing instructions from programs and applications.</td>
+                    </tr>
+                    <tr>
+                        <td class="component-name">Memory (RAM)</td>
+                        <td>Random Access Memory (RAM) is the short-term memory of a computer. It temporarily stores data that the CPU needs to access quickly, such as running applications and active processes.</td>
+                    </tr>
+                    <tr>
+                        <td class="component-name">Storage (HDD/SSD)</td>
+                        <td>Storage devices, like Hard Disk Drives (HDD) and Solid State Drives (SSD), are used to store data permanently. This includes the operating system, software applications, and personal files.</td>
+                    </tr>
+                    <tr>
+                        <td class="component-name">GPU (Graphics Processing Unit)</td>
+                        <td>The Graphics Processing Unit (GPU) is responsible for rendering images, videos, and animations. It's especially important for gaming, video editing, and other graphics-intensive tasks.</td>
+                    </tr>
+                    <tr>
+                        <td class="component-name">Motherboard</td>
+                        <td>The motherboard is the main circuit board that connects all the components of a computer. It allows the CPU, RAM, storage, and other hardware to communicate with each other.</td>
+                    </tr>
+                    <tr>
+                        <td class="component-name">Power Supply Unit (PSU)</td>
+                        <td>The Power Supply Unit (PSU) converts electrical power from an outlet into usable power for the other components of the computer. It ensures that each part receives the correct voltage and current.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
         <div class="container">
             <p>&copy; 2024 TechCorp. All rights reserved.</p>
-    
+        </div>
+    </footer>
+    <div id="modal-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
